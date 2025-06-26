@@ -1,0 +1,46 @@
+python -m venv venv   // Criate a new virtual environment
+.\venv\Scripts\activate   // Activate the virtual development environment
+pip list    // see list of installed libraries
+pip install scrapy  // install scrapy library
+
+scrapy startproject bookscraper // start the project
+cd .\bookscraper\    // work inside the bookscrapy subfolder
+
+scrapy -h    // see the list of commands
+cd .\bookscraper\    //enter the subfolder
+
+scrapy genspider bookspider books.toscrape.com  // criate spider with site "books.toscrape.com"
+
+
+# scrapy shell
+pip install ipython   // permite trabalhar com python de forma interativa
+
+shell = ipython    // adiciona em "scrapy.cfg" 
+
+scrapy shell   // para testar se vai executar o terminal interativo
+
+
+
+
+# Executar comando scrapy shell
+
+> fetch('https://books.toscrape.com/')
+> response
+> response.css('article.product_pod')
+> response.css('article.product_pod').get()
+> books = response.css('article.product_pod')
+> len(books)
+
+Nessa aula
+> book = books[0]
+> book.css('h3 a::text').get()
+> book.css('.product_price .price_color::text').get()
+> book.css('h3 a').attrib['href']
+
+exit // para sair do scrapy shell
+
+cd..   //volta um diretorio
+cd..   //volta mais um diretorio
+
+
+scrapy crawl bookspider  // Comando para executar no terminal o scrapy  (obs: precisa estar dentro do mesmo diretorio onde fica o "scrapy.cfg")
