@@ -108,7 +108,8 @@
   <li>🛠️ Criação de soluções personalizadas para automação no ambiente pessoal ou profissional.</li>
 </ul>
 
+<h3>🚀 Conclusão</h3>
 <p>
-  Com este conhecimento, você está preparado para automatizar, escalar e inovar processos usando Python. Seja em empresas, projetos pessoais ou freelas, você terá ferramentas poderosas nas mãos!
+  Este repositório representa uma formação completa em automação com Python, passando por tarefas rotineiras, scraping, controle de navegador, IA e assistentes virtuais. Uma excelente base para desenvolvedores, cientistas de dados ou entusiastas que desejam dominar a automação moderna.
 </p>
 
